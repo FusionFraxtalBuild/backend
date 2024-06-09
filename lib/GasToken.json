@@ -1,0 +1,9 @@
+{
+  "TokenAddress": "0x7695E854Dd22c4E609d2C62B460293599aC3757A",
+  "addresses": {
+    "Indexer": "0x231df6781EFC5A3AD7f00F3569ED2CF721FF73DC",
+    "IndexerProxyFactory": "0xB357DC7e3121B520A952Ee31cb7D412BE94732E6",
+    "buy_prove": "0x29857f3EBC1fdda7b9eBFd158fA4E7E35E3cDDB1",
+    "burn_prove": "0x5431d2A5f3e8cc457e0bf7E339A3c6356864B5c6"
+  }
+}

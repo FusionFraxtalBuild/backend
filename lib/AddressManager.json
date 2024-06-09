@@ -1,0 +1,39 @@
+[
+  {
+    "chainId": 84532,
+    "chainName": "Base",
+    "isBase": true,
+    "rpcUrl": "https://base-sepolia.blockpi.network/v1/rpc/public",
+    "baseGas": 0,
+    "cautionGas": 15000,
+    "creditCost": 400000000000000,
+    "convert_id": "3408",
+    "id": "1027",
+    "creditPerTx": 0.03,
+    "addresses": {
+      "Fusion": "0x64a0D490499B3EBC8d321C946D850e9B2b490283",
+      "FusionForwarder": "0xA625F2fA1a257b98ED756aD5a634B82AE457e417",
+      "FactoryForwarder": "0x879069C52E60f49dF8D51Db4BeDcBdb841d11966",
+      "FusionProxyFactory": "0x47A4620870e1217F0ff3564D99343917b74BCE4a",
+      "FusionVault": "0x22Fba0A6397a0803c6318feE1E3662711105e564",
+      "FusionGasTank": "0x51781cc1439BD05a85185C8c8CEc979b263236e3",
+      "PasswordVerifier": "0x44e8D61d983AaC3571d3c5f69Af056492a83C11f",
+      "SignatureVerifier": "0xc98e8e1939d1a36d3744bb5009F559Ee6A351C5b",
+      "ServerVerifier": "0xC31aE0618A1562Fb8cAFEe3845f4e48fbF41082b"
+    },
+    "tokens": [
+      {
+        "name": "USDC",
+        "address": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+        "convert_id": "3408",
+        "id": "1027",
+        "decimals": 6,
+        "creditCost": 1000000
+      }
+    ],
+    "transactions": {
+      "apiUrl": "https://api-sepolia.basescan.org/api",
+      "apiKey": "BZP99H9U5SEDZTTP3BIBUYE5X2TMM9PX5Q"
+    }
+  }
+]
