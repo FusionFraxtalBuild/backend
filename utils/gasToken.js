@@ -208,7 +208,7 @@ const withdrawFees = async (domain, chainId, txHash, estimatedGas) => {
   return receipt;
 };
 
-const estimateWithdrawGas = async (domain, chainId, txHash, estimatedGas) => {
+const estimateWithdrawFees = async (domain, chainId, txHash, estimatedGas) => {
   const baseChain = AddressManager.find((chain) => chain.isBase);
 
   const provider = new ethers.providers.JsonRpcProvider(baseChain.rpcUrl);
@@ -268,7 +268,23 @@ const estimateWithdrawGas = async (domain, chainId, txHash, estimatedGas) => {
     )
   );
 
-  return gasEstimate.toFixed(0);
+  const ethGas = Number(await provider.getGasPrice());
+  const gasPrice = Number(
+    await ethToErc20(
+      {
+        id: baseChain.id,
+        convert_id: baseChain.convert_id,
+      },
+      ethGas
+    )
+  );
+
+  const estimateFees = (
+    (gasEstimate + baseChain.baseGas + baseChain.cautionGas) *
+    gasPrice
+  ).toFixed(0);
+
+  return estimateFees;
 };
 
 module.exports = {
@@ -276,5 +292,5 @@ module.exports = {
   depositAndIndex,
   checkValidTx,
   withdrawFees,
-  estimateWithdrawGas,
+  estimateWithdrawFees,
 };
