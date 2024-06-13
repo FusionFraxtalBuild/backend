@@ -19,6 +19,9 @@ app.use("/api/execute", require("./routes/api/execute"));
 app.use("/api/executeBatch", require("./routes/api/executeBatch"));
 app.use("/api/recovery", require("./routes/api/recovery"));
 app.use("/api/change", require("./routes/api/change"));
+app.use("/api/public-conversion", require("./routes/api/public-conversion"));
+app.use("/api/transactions", require("./routes/api/transactions"));
+app.use("/api/gasCredit", require("./routes/api/gasCredit"));
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
