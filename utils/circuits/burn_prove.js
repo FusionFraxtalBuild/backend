@@ -25,9 +25,9 @@ const burn_prove = async (domain, serverHash, chainId, txHash, amount) => {
         .slice(0, 4),
       32
     ),
-    chainId: ethers.utils.hexZeroPad(chainId, 32),
-    txHash: txHash,
-    amount: ethers.utils.hexZeroPad(amount, 32),
+    chainId: ethers.utils.hexZeroPad(Number(chainId), 32),
+    txHash: Array.from(ethers.utils.arrayify(txHash)),
+    amount: ethers.utils.hexZeroPad(ethers.BigNumber.from(amount), 32),
   };
 
   const burnProof = ethers.utils.hexlify(

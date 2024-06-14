@@ -28,7 +28,7 @@ const deploy_prove = async (provider, domain, serverHash, chainId) => {
         .slice(0, 4),
       32
     ),
-    chainId: ethers.utils.hexZeroPad(chainId, 32),
+    chainId: ethers.utils.hexZeroPad(Number(chainId), 32),
     signing_address: bytes32Address,
     proving_address: bytes32Address,
   };

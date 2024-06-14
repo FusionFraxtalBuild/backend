@@ -1,1 +1,51 @@
-{"noir_version":"0.22.0+3fae4a03fded4e3f5065e7461c563f7e39745604","hash":10406020704831456258,"abi":{"parameters":[{"name":"reqDomain","type":{"kind":"field"},"visibility":"private"},{"name":"passcode","type":{"kind":"field"},"visibility":"private"},{"name":"serverHash","type":{"kind":"field"},"visibility":"public"},{"name":"domain","type":{"kind":"field"},"visibility":"public"},{"name":"chainId","type":{"kind":"field"},"visibility":"public"},{"name":"txHash","type":{"kind":"field"},"visibility":"public"},{"name":"amount","type":{"kind":"field"},"visibility":"public"}],"param_witnesses":{"amount":[{"start":7,"end":8}],"chainId":[{"start":5,"end":6}],"domain":[{"start":4,"end":5}],"passcode":[{"start":2,"end":3}],"reqDomain":[{"start":1,"end":2}],"serverHash":[{"start":3,"end":4}],"txHash":[{"start":6,"end":7}]},"return_type":null,"return_witnesses":[]},"bytecode":"H4sIAAAAAAAA/7WSUQrDMAxD3bTbchw7Thr7b1dZWHr/E4yl1IOuv00fCGEwAoE8AIywMTQ9mpzdq3+abuYrHv75/T7NGecYaw6VmF4YtEjCmMosJJQkvYMwV4mStWhGpciVlqS84Ma4y8JzkO+XhVd2Hjp2njp2drtdONsB2F4mu++2mSNfbpv0vVgCAAA="}
+{
+  "noir_version": "0.22.0+3fae4a03fded4e3f5065e7461c563f7e39745604",
+  "hash": 14814518761443563104,
+  "abi": {
+    "parameters": [
+      {
+        "name": "reqDomain",
+        "type": { "kind": "field" },
+        "visibility": "private"
+      },
+      {
+        "name": "passcode",
+        "type": { "kind": "field" },
+        "visibility": "private"
+      },
+      {
+        "name": "serverHash",
+        "type": { "kind": "field" },
+        "visibility": "public"
+      },
+      { "name": "domain", "type": { "kind": "field" }, "visibility": "public" },
+      {
+        "name": "chainId",
+        "type": { "kind": "field" },
+        "visibility": "public"
+      },
+      {
+        "name": "txHash",
+        "type": {
+          "kind": "array",
+          "length": 32,
+          "type": { "kind": "integer", "sign": "unsigned", "width": 8 }
+        },
+        "visibility": "public"
+      },
+      { "name": "amount", "type": { "kind": "field" }, "visibility": "public" }
+    ],
+    "param_witnesses": {
+      "amount": [{ "start": 38, "end": 39 }],
+      "chainId": [{ "start": 5, "end": 6 }],
+      "domain": [{ "start": 4, "end": 5 }],
+      "passcode": [{ "start": 2, "end": 3 }],
+      "reqDomain": [{ "start": 1, "end": 2 }],
+      "serverHash": [{ "start": 3, "end": 4 }],
+      "txHash": [{ "start": 6, "end": 38 }]
+    },
+    "return_type": null,
+    "return_witnesses": []
+  },
+  "bytecode": "H4sIAAAAAAAA/7WUSY7CMBBFi24a6HmeJ7oDZGvHNrF3XIWIcP8TIPIVI8JnSfhSqfSiyEop9ZyKSCJ1OlWdVNWratDgPvGA+Jz4gviS+Ir4mviG+Jb4jvie+IH4kfiJ+Jn4hfiV+I34nfiD+JP4i/ib+If4l3hI/Ef8T5wQj4jHDe7HZxL7qqqz2JFUdrN5dxa7UVNryzwrtdFzlYXCO2VdMfXaa+fdIvPGlN76PBQhV0FbU+qlC2ap6pw2zlKHRaftnaWOOXOnxZm7Lc68mbO5Nwj+UTfuRU+29wPuAbgP3+E4vIbL8BfOwlO4CR/hILyDa/ALTsEjuANf4Ai8gAvY/6HUe47dTuK3YG8nsp815544RdQEAAA="
+}

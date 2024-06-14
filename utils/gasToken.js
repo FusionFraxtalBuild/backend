@@ -71,7 +71,9 @@ const depositAndIndex = async (domain, chainId, txHash, amount) => {
     throw new Error("Indexer not found");
   }
 
-  const serverHash = await indexer.getServerHash();
+  const indexerContract = new ethers.Contract(indexer, IndexerABI, provider);
+
+  const serverHash = await indexerContract.getServerHash();
 
   const proof = await buy_prove(domain, serverHash, chainId, txHash, amount);
 
@@ -81,12 +83,14 @@ const depositAndIndex = async (domain, chainId, txHash, amount) => {
     keypair
   );
 
+  const gasPrice = Number(await provider.getGasPrice());
+
   const data = gasTokenContract.interface.encodeFunctionData("BuyAndIndex", [
     proof,
     domain,
     chainId,
     txHash,
-    amount,
+    Number(amount * 10 ** 18).toFixed(0),
   ]);
 
   const unSignedTx = {
@@ -94,6 +98,7 @@ const depositAndIndex = async (domain, chainId, txHash, amount) => {
     data,
     value: 0,
     gasLimit: 2000000,
+    gasPrice,
   };
 
   const signedTx = await keypair.sendTransaction(unSignedTx);

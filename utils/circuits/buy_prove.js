@@ -25,9 +25,12 @@ const buy_prove = async (domain, serverHash, chainId, txHash, amount) => {
         .slice(0, 4),
       32
     ),
-    chainId: ethers.utils.hexZeroPad(chainId, 32),
-    txHash: txHash,
-    amount: ethers.utils.hexZeroPad(amount, 32),
+    chainId: ethers.utils.hexZeroPad(Number(chainId), 32),
+    txHash: Array.from(ethers.utils.arrayify(txHash)),
+    amount: ethers.utils.hexZeroPad(
+      ethers.BigNumber.from(amount).mul(ethers.BigNumber.from(10).pow(18)),
+      32
+    ),
   };
 
   const buyProof = ethers.utils.hexlify(
