@@ -36,7 +36,7 @@ router.get("/:chainId/:domain", async (req, res) => {
       currentChain.transactions.apiUrl +
         "?module=account&action=txlist&address=" +
         fusionProxy +
-        "&startblock=0&endblock=99999999999999&page=1&offset=10&sort=asc&apikey=" +
+        "&startblock=0&endblock=99999999999999&page=1&offset=10&sort=desc&apikey=" +
         currentChain.transactions.apiKey
     );
 
@@ -44,7 +44,7 @@ router.get("/:chainId/:domain", async (req, res) => {
       currentChain.transactions.apiUrl +
         "?module=account&action=txlistinternal&address=" +
         fusionProxy +
-        "&startblock=0&endblock=99999999999999&page=1&offset=10&sort=asc&apikey=" +
+        "&startblock=0&endblock=99999999999999&page=1&offset=10&sort=desc&apikey=" +
         currentChain.transactions.apiKey
     );
 
