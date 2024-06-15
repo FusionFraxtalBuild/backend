@@ -5,6 +5,7 @@ const FusionProxyFactoryABI = require("../lib/abi/FusionProxyFactory.json");
 const GasTokenABI = require("../lib/abi/GasToken.json");
 const gasToken = require("../lib/GasToken.json");
 const AddressManager = require("../lib/AddressManager.json");
+const { ethToErc20 } = require("./common");
 
 const { buy_prove } = require("./circuits/buy_prove");
 const { burn_prove } = require("./circuits/burn_prove");
@@ -175,7 +176,9 @@ const withdrawFees = async (domain, chainId, txHash, estimatedGas) => {
     throw new Error("Indexer not found");
   }
 
-  const serverHash = await indexer.getServerHash();
+  const indexerContract = new ethers.Contract(indexer, IndexerABI, provider);
+
+  const serverHash = await indexerContract.getServerHash();
 
   const proof = await burn_prove(
     domain,
@@ -247,7 +250,9 @@ const estimateWithdrawFees = async (domain, chainId, txHash, estimatedGas) => {
     throw new Error("Indexer not found");
   }
 
-  const serverHash = await indexer.getServerHash();
+  const indexerContract = new ethers.Contract(indexer, IndexerABI, provider);
+
+  const serverHash = await indexerContract.getServerHash();
 
   const proof = await burn_prove(
     domain,

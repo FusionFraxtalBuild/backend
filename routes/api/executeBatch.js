@@ -679,7 +679,7 @@ router.post("/gasless/:domain/:chainId", async (req, res) => {
     await withdrawFees(
       domain,
       chainId,
-      receipt.TxHash,
+      receipt.transactionHash,
       Number(estimateFees) + Number(withdrawEstimatedFees)
     );
 
@@ -737,7 +737,7 @@ router.get("/estimate/gasless/:chainId", async (req, res) => {
     );
 
     const withdrawEstimatedFees = await estimateWithdrawFees(
-      "DummyDomain",
+      "anoy.fusion.id",
       chainId,
       "0x0c5803837d232b5758443e370d4add9a7fb71311e47026f284a5d81bcea7ee84",
       Number(estimateFees)
