@@ -194,6 +194,8 @@ const withdrawFees = async (domain, chainId, txHash, estimatedGas) => {
     keypair
   );
 
+  const gasPrice = Number(await provider.getGasPrice());
+
   const data = gasTokenContract.interface.encodeFunctionData("withdrawFees", [
     proof,
     domain,
@@ -207,6 +209,7 @@ const withdrawFees = async (domain, chainId, txHash, estimatedGas) => {
     data,
     value: 0,
     gasLimit: 2000000,
+    gasPrice,
   };
 
   const signedTx = await keypair.sendTransaction(unSignedTx);

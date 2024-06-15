@@ -35,5 +35,42 @@
       "apiUrl": "https://api-sepolia.basescan.org/api",
       "apiKey": "BZP99H9U5SEDZTTP3BIBUYE5X2TMM9PX5Q"
     }
+  },
+  {
+    "chainId": 11155420,
+    "chainName": "Optimism",
+    "isBase": false,
+    "rpcUrl": "https://optimism-sepolia.drpc.org",
+    "baseGas": 0,
+    "cautionGas": 15000,
+    "creditCost": 400000000000000,
+    "convert_id": "3408",
+    "id": "1027",
+    "creditPerTx": 0.03,
+    "addresses": {
+      "Fusion": "0x9ef56D0d3E6b1815564FD38305983ef58b40a832",
+      "FusionForwarder": "0x4b9225B31e42C424922A592295A5D29B730bfb2A",
+      "FactoryForwarder": "0x564c96693F4a50a4B49bD02d5a54CDE6a7E6050D",
+      "FusionProxyFactory": "0x8e8379187B999e7028C86F58945740F723D63654",
+      "FusionVault": "0x2C14f5E9e0FE99af55c97B5FcBC3D61FDb5f4115",
+      "FusionGasTank": "0x51781cc1439BD05a85185C8c8CEc979b263236e3",
+      "PasswordVerifier": "0xfeE8519dA4D85ECa10d77735dcf1b89F44dE03b9",
+      "SignatureVerifier": "0xea8A2dD688F021A2d2FdA73124235e673E7A4BFc",
+      "ServerVerifier": "0x8518246341BF83eAA4fA0D3F85931A23e56C371a"
+    },
+    "tokens": [
+      {
+        "name": "USDC",
+        "address": "0x5fd84259d66Cd46123540766Be93DFE6D43130D7",
+        "convert_id": "3408",
+        "id": "1027",
+        "decimals": 6,
+        "creditCost": 1000000
+      }
+    ],
+    "transactions": {
+      "apiUrl": "https://api-sepolia-optimistic.etherscan.io/api",
+      "apiKey": "89K6NC1QZIUZSA6A6S5SY1N3DVIBCJCD3A"
+    }
   }
 ]
