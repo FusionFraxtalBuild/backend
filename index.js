@@ -23,6 +23,19 @@ app.use("/api/public-conversion", require("./routes/api/public-conversion"));
 app.use("/api/transactions", require("./routes/api/transactions"));
 app.use("/api/gasCredit", require("./routes/api/gasCredit"));
 
+app.post("/", (req, res) => {
+  const body = req.body;
+
+  console.log("body", body);
+
+  const array = body.params[0].Array;
+  console.log("array", array);
+  return res.status(200).json({
+    id: body.id,
+    result: { values: [{ Array: array }] },
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
