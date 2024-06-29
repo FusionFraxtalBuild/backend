@@ -1,9 +1,9 @@
 [
   {
-    "chainId": 84532,
-    "chainName": "Base",
+    "chainId": 252,
+    "chainName": "Fraxtal",
     "isBase": true,
-    "rpcUrl": "https://base-sepolia.blockpi.network/v1/rpc/public",
+    "rpcUrl": "https://rpc.frax.com",
     "baseGas": 0,
     "cautionGas": 15000,
     "creditCost": 400000000000000,
@@ -11,14 +11,14 @@
     "id": "1027",
     "creditPerTx": 0.03,
     "addresses": {
-      "Fusion": "0x64a0D490499B3EBC8d321C946D850e9B2b490283",
-      "FusionForwarder": "0xA625F2fA1a257b98ED756aD5a634B82AE457e417",
-      "FactoryForwarder": "0x879069C52E60f49dF8D51Db4BeDcBdb841d11966",
-      "FusionProxyFactory": "0x47A4620870e1217F0ff3564D99343917b74BCE4a",
-      "FusionVault": "0x22Fba0A6397a0803c6318feE1E3662711105e564",
-      "FusionGasTank": "0x51781cc1439BD05a85185C8c8CEc979b263236e3",
-      "PasswordVerifier": "0x44e8D61d983AaC3571d3c5f69Af056492a83C11f",
-      "SignatureVerifier": "0xc98e8e1939d1a36d3744bb5009F559Ee6A351C5b",
+      "Fusion": "0xd17Dd62290EcdEa48e5029a4fBd519245C911c19",
+      "FusionForwarder": "0x0B62BDA8EcE17AFfa7adAe16bBaBBC8584A30016",
+      "FactoryForwarder": "0x40C92d2E370b3d3944fDd90c922a407F02D286d1",
+      "FusionProxyFactory": "0x44950f083691828A07c17d2A927B435e8B272F6D",
+      "FusionVault": "0x1275917daAE6389C61c7B1E8199724D0b46Ed10f",
+      "FusionGasTank": "0xA2d6267B5b167Ee27174BfDa808408F90391D949",
+      "PasswordVerifier": "0xC4e20B3BD1922A02c6DAC500De5754E3CC4046BB",
+      "SignatureVerifier": "0xE34906Eda6Cf2cafFa1d567523C7954fDf9E80E0",
       "ServerVerifier": "0xC31aE0618A1562Fb8cAFEe3845f4e48fbF41082b"
     },
     "tokens": [
@@ -32,15 +32,15 @@
       }
     ],
     "transactions": {
-      "apiUrl": "https://api-sepolia.basescan.org/api",
-      "apiKey": "BZP99H9U5SEDZTTP3BIBUYE5X2TMM9PX5Q"
+      "apiUrl": "https://api.fraxscan.com/api",
+      "apiKey": "VEFPEUSAVJHK9NGP52KU69AUFJ4YKIS44X"
     }
   },
   {
-    "chainId": 11155420,
+    "chainId": 10,
     "chainName": "Optimism",
     "isBase": false,
-    "rpcUrl": "https://optimism-sepolia.drpc.org",
+    "rpcUrl": "https://lb.nodies.app/v1/9aa344a56a444c88a87b6d767eebbe8ag",
     "baseGas": 0,
     "cautionGas": 15000,
     "creditCost": 400000000000000,
@@ -48,15 +48,15 @@
     "id": "1027",
     "creditPerTx": 0.03,
     "addresses": {
-      "Fusion": "0x9ef56D0d3E6b1815564FD38305983ef58b40a832",
-      "FusionForwarder": "0x4b9225B31e42C424922A592295A5D29B730bfb2A",
-      "FactoryForwarder": "0x564c96693F4a50a4B49bD02d5a54CDE6a7E6050D",
-      "FusionProxyFactory": "0x8e8379187B999e7028C86F58945740F723D63654",
-      "FusionVault": "0x2C14f5E9e0FE99af55c97B5FcBC3D61FDb5f4115",
-      "FusionGasTank": "0x51781cc1439BD05a85185C8c8CEc979b263236e3",
-      "PasswordVerifier": "0xfeE8519dA4D85ECa10d77735dcf1b89F44dE03b9",
-      "SignatureVerifier": "0xea8A2dD688F021A2d2FdA73124235e673E7A4BFc",
-      "ServerVerifier": "0x8518246341BF83eAA4fA0D3F85931A23e56C371a"
+      "Fusion": "0xE876ccf876A21Dd429D7f368e5b6f8bdAE31Ff8f",
+      "FusionForwarder": "0x95A847284488C6E57001F1245813a0aCcC709f07",
+      "FactoryForwarder": "0x06A927Cf54B15d4178F0e3EC9ae85De5770B7CA7",
+      "FusionProxyFactory": "0x63949B7b906417c555136028391699E2B5adb381",
+      "FusionVault": "0x3705505C5690a836b33736CD13568Ee8700D35c4",
+      "FusionGasTank": "0xA2d6267B5b167Ee27174BfDa808408F90391D949",
+      "PasswordVerifier": "0x4CBe3de5c80A83BBa51a80A9EECd29BeB0afC1a5",
+      "SignatureVerifier": "0xa4E6692C0AA19Fc75265267a771188eCA57C3C49",
+      "ServerVerifier": "0x21BAB5EadF1d736933ec433431Fa41125AEb9E64"
     },
     "tokens": [
       {
@@ -69,7 +69,7 @@
       }
     ],
     "transactions": {
-      "apiUrl": "https://api-sepolia-optimistic.etherscan.io/api",
+      "apiUrl": "https://api-optimistic.etherscan.io/api",
       "apiKey": "89K6NC1QZIUZSA6A6S5SY1N3DVIBCJCD3A"
     }
   }
