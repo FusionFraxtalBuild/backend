@@ -8,7 +8,7 @@
     "cautionGas": 15000,
     "creditCost": 400000000000000,
     "convert_id": "3408",
-    "id": "1027",
+    "id": "23225",
     "creditPerTx": 0.03,
     "addresses": {
       "Fusion": "0xd17Dd62290EcdEa48e5029a4fBd519245C911c19",
@@ -23,11 +23,19 @@
     },
     "tokens": [
       {
-        "name": "USDC",
-        "address": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
-        "convert_id": "3408",
-        "id": "1027",
-        "decimals": 6,
+        "name": "Frax",
+        "address": "0xFc00000000000000000000000000000000000001",
+        "convert_id": "6952",
+        "id": "23225",
+        "decimals": 18,
+        "creditCost": 1000000
+      },
+      {
+        "name": "SFRXETH",
+        "address": "0xFC00000000000000000000000000000000000005",
+        "convert_id": "23177",
+        "id": "23225",
+        "decimals": 18,
         "creditCost": 1000000
       }
     ],
@@ -40,7 +48,7 @@
     "chainId": 10,
     "chainName": "Optimism",
     "isBase": false,
-    "rpcUrl": "https://lb.nodies.app/v1/9aa344a56a444c88a87b6d767eebbe8ag",
+    "rpcUrl": "https://op-pokt.nodies.app",
     "baseGas": 0,
     "cautionGas": 15000,
     "creditCost": 400000000000000,
@@ -61,7 +69,7 @@
     "tokens": [
       {
         "name": "USDC",
-        "address": "0x5fd84259d66Cd46123540766Be93DFE6D43130D7",
+        "address": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85",
         "convert_id": "3408",
         "id": "1027",
         "decimals": 6,
