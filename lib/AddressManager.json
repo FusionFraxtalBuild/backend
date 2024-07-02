@@ -28,7 +28,7 @@
         "convert_id": "6952",
         "id": "23225",
         "decimals": 18,
-        "creditCost": 1000000
+        "creditCost": 1005000000000000000
       },
       {
         "name": "SFRXETH",
@@ -36,7 +36,7 @@
         "convert_id": "23177",
         "id": "23225",
         "decimals": 18,
-        "creditCost": 1000000
+        "creditCost": 280000000000000
       }
     ],
     "transactions": {
