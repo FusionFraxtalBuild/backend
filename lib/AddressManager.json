@@ -80,5 +80,79 @@
       "apiUrl": "https://api-optimistic.etherscan.io/api",
       "apiKey": "89K6NC1QZIUZSA6A6S5SY1N3DVIBCJCD3A"
     }
+  },
+  {
+    "chainId": 1284,
+    "chainName": "Moonbeam",
+    "isBase": false,
+    "rpcUrl": "https://moonbeam-rpc.publicnode.com",
+    "baseGas": 0,
+    "cautionGas": 15000,
+    "creditCost": 4750000000000000000,
+    "convert_id": "3408",
+    "id": "6836",
+    "creditPerTx": 0.03,
+    "addresses": {
+      "Fusion": "0xd17Dd62290EcdEa48e5029a4fBd519245C911c19",
+      "FusionForwarder": "0x0B62BDA8EcE17AFfa7adAe16bBaBBC8584A30016",
+      "FactoryForwarder": "0x40C92d2E370b3d3944fDd90c922a407F02D286d1",
+      "FusionProxyFactory": "0x44950f083691828A07c17d2A927B435e8B272F6D",
+      "FusionVault": "0x1275917daAE6389C61c7B1E8199724D0b46Ed10f",
+      "FusionGasTank": "0xA2d6267B5b167Ee27174BfDa808408F90391D949",
+      "PasswordVerifier": "0x0c17B9e142a0DDb42f075b0E2f1988691ea1d75a",
+      "SignatureVerifier": "0xC4e20B3BD1922A02c6DAC500De5754E3CC4046BB",
+      "ServerVerifier": "0xE34906Eda6Cf2cafFa1d567523C7954fDf9E80E0"
+    },
+    "tokens": [
+      {
+        "name": "USDC",
+        "address": "0x931715FEE2d06333043d11F658C8CE934aC61D0c",
+        "convert_id": "3408",
+        "id": "6836",
+        "decimals": 6,
+        "creditCost": 1000000
+      }
+    ],
+    "transactions": {
+      "apiUrl": "https://api-moonbeam.moonscan.io/api",
+      "apiKey": "HV1RAP2QJVSE1HUZK63PG31C7EIJINYJA4"
+    }
+  },
+  {
+    "chainId": 592,
+    "chainName": "Astar",
+    "isBase": false,
+    "rpcUrl": "https://astar-rpc.dwellir.com",
+    "baseGas": 0,
+    "cautionGas": 15000,
+    "creditCost": 13400000000000000000,
+    "convert_id": "3408",
+    "id": "12885",
+    "creditPerTx": 0.03,
+    "addresses": {
+      "Fusion": "0xd17Dd62290EcdEa48e5029a4fBd519245C911c19",
+      "FusionForwarder": "0x0B62BDA8EcE17AFfa7adAe16bBaBBC8584A30016",
+      "FactoryForwarder": "0x40C92d2E370b3d3944fDd90c922a407F02D286d1",
+      "FusionProxyFactory": "0x44950f083691828A07c17d2A927B435e8B272F6D",
+      "FusionVault": "0x1275917daAE6389C61c7B1E8199724D0b46Ed10f",
+      "FusionGasTank": "0xA2d6267B5b167Ee27174BfDa808408F90391D949",
+      "PasswordVerifier": "0x0c17B9e142a0DDb42f075b0E2f1988691ea1d75a",
+      "SignatureVerifier": "0xC4e20B3BD1922A02c6DAC500De5754E3CC4046BB",
+      "ServerVerifier": "0xE34906Eda6Cf2cafFa1d567523C7954fDf9E80E0"
+    },
+    "tokens": [
+      {
+        "name": "USDC",
+        "address": "0x6a2d262D56735DbA19Dd70682B39F6bE9a931D98",
+        "convert_id": "3408",
+        "id": "12885",
+        "decimals": 6,
+        "creditCost": 1000000
+      }
+    ],
+    "transactions": {
+      "apiUrl": "https://astar.blockscout.com/api",
+      "apiKey": "YOUR_API_KEY"
+    }
   }
 ]

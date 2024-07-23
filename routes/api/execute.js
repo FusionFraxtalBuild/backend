@@ -558,7 +558,7 @@ router.post("/gasless/:domain/:chainId", async (req, res) => {
       domain,
       chainId,
       "0x0c5803837d232b5758443e370d4add9a7fb71311e47026f284a5d81bcea7ee84",
-      Number(estimateFees)
+      estimateFees
     );
 
     if (
@@ -658,7 +658,7 @@ router.post("/gasless/:domain/:chainId", async (req, res) => {
       domain,
       chainId,
       receipt.transactionHash,
-      Number(estimateFees) + Number(withdrawEstimatedFees)
+      (Number(estimateFees) + Number(withdrawEstimatedFees)).toString()
     );
 
     res.json({ success: true, receipt });
@@ -718,7 +718,7 @@ router.get("/estimate/gasless/:chainId", async (req, res) => {
       "anoy.fusion.id",
       chainId,
       "0x0c5803837d232b5758443e370d4add9a7fb71311e47026f284a5d81bcea7ee84",
-      Number(estimateFees)
+      estimateFees
     );
 
     res.json({

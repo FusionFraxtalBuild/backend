@@ -36,16 +36,20 @@ router.get("/:chainId/:domain", async (req, res) => {
       currentChain.transactions.apiUrl +
         "?module=account&action=txlist&address=" +
         fusionProxy +
-        "&startblock=0&endblock=99999999999999&page=1&offset=10&sort=desc&apikey=" +
-        currentChain.transactions.apiKey
+        (currentChain.chainId !== 592
+          ? "&startblock=0&endblock=99999999999999&page=1&offset=10&sort=desc&apikey="
+          : "") +
+        (currentChain.chainId !== 592 ? currentChain.transactions.apiKey : "")
     );
 
     const internalTx = await axios.get(
       currentChain.transactions.apiUrl +
         "?module=account&action=txlistinternal&address=" +
         fusionProxy +
-        "&startblock=0&endblock=99999999999999&page=1&offset=10&sort=desc&apikey=" +
-        currentChain.transactions.apiKey
+        (currentChain.chainId !== 592
+          ? "&startblock=0&endblock=99999999999999&page=1&offset=10&sort=desc&apikey="
+          : "") +
+        (currentChain.chainId !== 592 ? currentChain.transactions.apiKey : "")
     );
 
     let erc20Tx = [];
@@ -58,8 +62,12 @@ router.get("/:chainId/:domain", async (req, res) => {
             token.address +
             "&address=" +
             fusionProxy +
-            "&startblock=0&endblock=99999999999999&page=1&offset=10&sort=asc&apikey=" +
-            currentChain.transactions.apiKey
+            (currentChain.chainId !== 592
+              ? "&startblock=0&endblock=99999999999999&page=1&offset=10&sort=desc&apikey="
+              : "") +
+            (currentChain.chainId !== 592
+              ? currentChain.transactions.apiKey
+              : "")
         );
 
         erc20Tx = [...tx.data.result, ...erc20Tx];
