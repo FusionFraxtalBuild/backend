@@ -154,5 +154,42 @@
       "apiUrl": "https://astar.blockscout.com/api",
       "apiKey": "YOUR_API_KEY"
     }
+  },
+  {
+    "chainId": 656476,
+    "chainName": "Edu Chain",
+    "isBase": false,
+    "rpcUrl": "https://rpc.open-campus-codex.gelato.digital",
+    "baseGas": 0,
+    "cautionGas": 15000,
+    "creditCost": 4750000000000000000,
+    "convert_id": "3408",
+    "id": "24613",
+    "creditPerTx": 0.03,
+    "addresses": {
+      "Fusion": "0xd17Dd62290EcdEa48e5029a4fBd519245C911c19",
+      "FusionForwarder": "0x0B62BDA8EcE17AFfa7adAe16bBaBBC8584A30016",
+      "FactoryForwarder": "0x40C92d2E370b3d3944fDd90c922a407F02D286d1",
+      "FusionProxyFactory": "0x21709908c8c8aA55F20Be21F58E79352A9b7D790",
+      "FusionVault": "0x1275917daAE6389C61c7B1E8199724D0b46Ed10f",
+      "FusionGasTank": "0xA2d6267B5b167Ee27174BfDa808408F90391D949",
+      "PasswordVerifier": "0x0c17B9e142a0DDb42f075b0E2f1988691ea1d75a",
+      "SignatureVerifier": "0xC4e20B3BD1922A02c6DAC500De5754E3CC4046BB",
+      "ServerVerifier": "0xE34906Eda6Cf2cafFa1d567523C7954fDf9E80E0"
+    },
+    "tokens": [
+      {
+        "name": "USDC",
+        "address": "0x931715FEE2d06333043d11F658C8CE934aC61D0c",
+        "convert_id": "3408",
+        "id": "24613",
+        "decimals": 6,
+        "creditCost": 1000000
+      }
+    ],
+    "transactions": {
+      "apiUrl": "https://opencampus-codex.blockscout.com/api",
+      "apiKey": "MY_API_KEY"
+    }
   }
 ]
