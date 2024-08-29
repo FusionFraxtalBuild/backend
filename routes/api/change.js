@@ -156,8 +156,8 @@ router.post("/native/:chainId", async (req, res) => {
       to: forwarder.address,
       data,
       value: 0,
-      gasLimit: 2000000,
-      gasPrice: gasPrice,
+      gasLimit: currentChain.chainId === 656476 ? null : 2000000,
+      gasPrice: currentChain.chainId === 656476 ? null : gasPrice,
     };
 
     const signedTx = await signer.sendTransaction(unSignedTx);
@@ -393,8 +393,8 @@ router.post("/erc20/:chainId", async (req, res) => {
       to: forwarder.address,
       data,
       value: 0,
-      gasLimit: 2000000,
-      gasPrice: ethGas,
+      gasLimit: currentChain.chainId === 656476 ? null : 2000000,
+      gasPrice: currentChain.chainId === 656476 ? null : ethGas,
     };
 
     const signedTx = await signer.sendTransaction(unSignedTx);

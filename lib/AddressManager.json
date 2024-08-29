@@ -180,7 +180,7 @@
     "tokens": [
       {
         "name": "USDC",
-        "address": "0x931715FEE2d06333043d11F658C8CE934aC61D0c",
+        "address": "0x77721D19BDfc67fe8cc46ddaa3cc4C94e6826E3C",
         "convert_id": "3408",
         "id": "24613",
         "decimals": 6,
@@ -189,7 +189,7 @@
     ],
     "transactions": {
       "apiUrl": "https://opencampus-codex.blockscout.com/api",
-      "apiKey": "MY_API_KEY"
+      "apiKey": "YOUR_API_KEY"
     }
   }
 ]

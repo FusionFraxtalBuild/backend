@@ -159,8 +159,8 @@ const deployExternal = async (
     to: currentChain.addresses.FactoryForwarder,
     data,
     value: 0,
-    gasLimit: 2000000,
-    gasPrice,
+    gasLimit: currentChain.chainId === 656476 ? null : 2000000,
+    gasPrice: currentChain.chainId === 656476 ? null : gasPrice,
   };
 
   const signedTx = await signer.sendTransaction(unSignedTx);
